@@ -1,0 +1,93 @@
+        * {
+            --shado: 1px 1px 1px rgb(255, 255, 255);
+        }
+        
+        @media only screen and (max-width: 850px) {
+            .formcontainer {
+                width: 100% !important;
+                margin: 120px 0 !important;
+            }
+        }
+        
+        body {
+            background-image: none;
+            background-color: rgb(36 36 36);
+        }
+        
+        #navbar {
+            border-radius: 0%;
+            background-color: black;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: 'navbar' 'contentt ' 'footerr' !important;
+            grid-template-columns: 1fr !important;
+        }
+        
+        .left {
+            display: none;
+        }
+        
+        .content {
+            margin-top: 0;
+            display: flex;
+            background-color: rgba(240, 248, 255, 0);
+            padding: 5% 0% !important;
+        }
+        
+        .right {
+            display: none;
+        }
+        
+        .formcontainer form {
+            margin-top: 8%;
+        }
+        
+        .formcontainer {
+            box-shadow: 5px 4px 20px 20px rgb(0, 0, 0);
+            width: 50%;
+            margin: 0;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        #logsub {
+            margin-top: 8%;
+        }
+        
+        .hing {
+            cursor: pointer;
+            display: inline!important;
+            width: auto !important;
+            background-color: rgba(240, 248, 255, 0);
+            border: none;
+        }
+        
+        #logbtn {
+            text-shadow: var(--shado)
+        }
+        
+        #loghead {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #formup {
+            display: none;
+        }
+        
+        #loghead span {
+            cursor: default;
+        }
+        
+        #mssg {
+            display: none;
+        }
+        
+        .failed {
+            background-color: #b7e8fffd;
+            border: 1px solid #001b55;
+            color: #001b55;
+        }

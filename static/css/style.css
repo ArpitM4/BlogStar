@@ -1,0 +1,337 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    --my-red: rgb(224, 36, 36);
+    --my-blue: rgb(1, 79, 246);
+    -webkit-tap-highlight-color: transparent;
+}
+
+    ::-webkit-input-placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 255, 255, 0.588);
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/14.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 850px) {
+    .vis {
+        display: inline!important;
+    }
+    .input {
+        display: none;
+    }
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+    #navbar span {
+        display: none;
+    }
+    .right {
+        border: none !important;
+    }
+    #container {
+        width: 100%;
+        grid-template-areas: 'navbar navbar' 'leftt contentt ' 'rightt rightt ' 'footerr footerr';
+        grid-template-columns: 1fr 3fr;
+    }
+    .content h1 {
+        font-size: 175% !important;
+    }
+    .content {
+        padding: 15px !important;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar' 'leftt contentt rightt' 'footerr footerr footerr';
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#navbar {
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.652);
+    text-align: justify;
+    width: 100%;
+    grid-area: navbar;
+    padding: 19px 0px;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.ni {
+    color: whitesmoke;
+    margin: 22px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--my-red);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 900;
+    text-shadow: 3px 3px 5px black;
+    font-size: 50px;
+}
+
+.content h3 {
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content {
+    margin: 15px;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: inset 3px 2px 11px black;
+    background-color: rgba(240, 248, 255, 0.15);
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 30px;
+    grid-area: contentt;
+    font-weight: 900;
+    text-align: justify;
+}
+
+.left ul {
+    list-style-position: inside
+}
+
+.left h2 {
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+    text-shadow: 3px 3px 8px rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.989);
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-left: 1px;
+    padding: 15px;
+    grid-area: leftt;
+    border-radius: 5px;
+    font-size: large;
+    background-color: rgba(7, 7, 7, 0.411);
+}
+
+.left ul li:hover {
+    color: rgb(245, 168, 81) !important;
+    font-weight: 900;
+}
+
+.highlight {
+    color: rgb(245, 168, 81) !important;
+    font-weight: 900;
+}
+
+.left ul li a,
+.left ul li {
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right div {
+    margin-bottom: 26%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.right {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-shadow: 2px 2px 5px white;
+    grid-area: rightt;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border-left: 2px solid grey;
+    align-items: center;
+}
+
+.ads {
+    background-color: rgb(204, 207, 211);
+    border: 2px solid grey;
+    height: 75%;
+    min-height: 300px;
+    width: 90%;
+}
+
+.content hr {
+    margin-bottom: 25px;
+}
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    height: 90%;
+    padding-top: 60px;
+    grid-area: footerr;
+}
+
+.ff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fi {
+    margin: 3%;
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+footer hr {
+    margin-left: 150px;
+    width: 70%;
+    margin: auto;
+}
+
+#endfoot {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar span {
+    background-image: url('images/favicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 30px !important;
+    padding: 13px 18px;
+    margin-right: 3px;
+}
+
+.detail {
+    font-family: 'Baloo Bha  i', cursive;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
+
+#endfoot span {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+#alert {
+    position: fixed;
+    width: auto;
+    font-weight: 900;
+    padding: 20px;
+    border-radius: 0.3rem;
+    bottom: 3%;
+    font-size: larger;
+    right: 1%;
+    visibility: hidden;
+}
+
+.success {
+    color: #0f5132;
+    background-color: #a3ebcbfd;
+    animation: fad 3.5s ease-out;
+    border: 1px solid #0f5132;
+}
+
+.failed {
+    background-color: #eba3a3fd;
+    animation: fad 5s ease-out;
+    border: 1px solid #842029;
+    color: #842029;
+}
+
+@keyframes fad {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.sign {
+    border: none;
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px;
+}
+
+#login {
+    background-color: rgb(172, 27, 240);
+    border-radius: 0.35rem;
+    max-height: 16px;
+    margin-right: 2%;
+}
+
+#logout {
+    border: 1px solid white;
+    border-radius: 0.35rem;
+    padding: 5px 5px;
+    background-color: black;
+    margin-right: 1%;
+}
+
+#readmode {
+    position: fixed;
+    font-weight: 900;
+    padding: 1%;
+    border-radius: 0.3rem;
+    bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.534);
+    font-size: small;
+    right: 1%;
+}
+
+.readcontainer {
+    grid-template-areas: 'navbar' 'contentt ' 'rightt' ' footerr' !important;
+    grid-template-columns: 1fr !important;
+}
+
+.hid {
+    display: none;
+}
+
+#check {
+display: none;
+}

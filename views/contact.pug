@@ -1,0 +1,18 @@
+extends base.pug
+
+block linkk
+    link(rel="stylesheet", href="static/css/contact.css")
+
+block heading 
+    h1.hing Contact Form 
+
+block content 
+    .formcontainer
+        form(action="/con" method='post')
+            input(type="text",name='name', placeholder="Enter Your Name",id='name')
+            input(type="email",name='mail', placeholder="Enter Your E-mail",id='mail')
+            textarea(name='querry', cols="30", rows="10",placeholder='Type Your Query...',id='querry')
+            button(type="submit",id='formsub').btn Submit
+    .con
+        h3 Email ⠀ ⠀:⠀support@blogstar.com
+        h3 Contact⠀:⠀011-80658127

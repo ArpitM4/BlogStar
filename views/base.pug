@@ -1,0 +1,76 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=1' )
+title Blog Star
+link(rel="preconnect", href="https://fonts.googleapis.com")
+link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+link(href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap", rel="stylesheet")
+link(href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap", rel="stylesheet")
+link(href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap", rel="stylesheet")
+link(href=`https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap` , rel="stylesheet")
+link(href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap", rel="stylesheet")
+
+link(rel="shortcut icon", href="/static/css/images/favicon.png", type="image/x-icon")
+link(rel="stylesheet", href="/static/css/style.css")
+block linkk
+
+.container#container
+  nav#navbar
+    span ⠀
+    a.ni(href="/") Home
+    a.ni(href="/contact") Contact
+    a.ni(href="/feedback") Favourites 
+    a.ni(href="/mode") Mode
+    button#readmode ⛶
+    form(action="/logout?_method=DELETE", method="POST")
+    button.sign#logout(type="submit")  Logout⠀ ↩
+    a.sign#login(href="/log") LOGIN
+    a.sign#n= ""
+  #alert Your Request Was Sent Successfully !  
+         
+  .left#left
+    h2#lefthead Our Blogs -
+    ul
+      li
+        a#Blog1(href="/Blog1") Blog 1
+      li
+        a#Blog2(href="/Blog2") Blog 2
+      li
+        a#Blog3(href="/Blog3") Blog 3
+      li
+        a#Blog4(href="/Blog4") Blog 4
+      li
+        a#Blog5(href="/Blog5") Blog 5
+      li
+        a#Blog6(href="/Blog6") Blog 6
+      li
+        a#Blog7(href="/Blog7") Blog 7
+      li
+        a#Blog8(href="/Blog8") Blog 8
+
+  .content
+
+    block heading
+
+    hr.lin
+    #check= mssg
+    block content    
+  .right
+    div Advertisement :
+    .ads
+  footer
+    .ff
+      a.fi(href="/") Home
+      a.fi(href="/contact") Contact
+      a.fi(href="/feedback") Favourites
+      a.fi(href="/mode") Mode
+    hr
+    #endfoot
+      .detail
+          h3 Email ⠀ ⠀:⠀support@blogstar.com
+          h3 Contact⠀:⠀011-80658127
+      span © 2005-2022 Mozilla and individual contributors. Content is available under these licenses.
+script(src="static/index.js")
+script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
+
+block script

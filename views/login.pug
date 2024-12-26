@@ -1,0 +1,28 @@
+extends base.pug
+
+block linkk
+    link(rel="stylesheet", href="static/css/contact.css")
+    link(rel="stylesheet", href="static/css/login.css")
+
+block heading 
+
+block content 
+    //- if messages.error
+    //-     messages.error 
+    #mssg= mssg
+    .formcontainer
+        #loghead
+            button#logbtn.hing Login 
+            span.hing |
+            button#signbtn.hing  Sign Up 
+
+        form#formin(action="/login" method='post')
+            input(type="email",name='logmail', placeholder="Enter Your E-mail",id='logmail')
+            input(type="password",name='pass', placeholder="Enter Your Password",id='logpass')
+            button(type="submit",id='logsub').btn Log In
+
+        form#formup(action="/signup" method='post')
+            input(type="text",name='logname', placeholder="Enter Your Name",id='logname')
+            input(type="email",name='logmail', placeholder="Enter Your E-mail",id='signmail')
+            input(type="password",name='pass', placeholder="Enter Your Password",id='signpass')
+            button(type="submit",id='logsubup').btn Sign Up
